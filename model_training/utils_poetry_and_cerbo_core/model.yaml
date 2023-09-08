@@ -1,0 +1,10 @@
+#########################################################################################
+# Cerbo model configuration file
+#
+# This file is required in the current directory in order to use `cerbo` CLI commands.
+# Only `model_name` and `model_version` are required, all other config properties are
+# optional.
+#
+
+model_name: fwang-research
+model_version: 1.0.0

@@ -1,0 +1,1 @@
+GIT_SSH_COMMAND='ssh -i /Users/fwang/.ssh/id_ed25519_personal_key -o IdentitiesOnly=yes -F /dev/null' git push origin main

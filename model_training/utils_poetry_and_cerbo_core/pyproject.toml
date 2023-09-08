@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "utils-poetry-and-cerbo-core"
+version = "0.1.0"
+description = ""
+authors = ["Fan Wang <fwang@godaddy.com>"]
+readme = "README.md"
+packages = [
+    { include = "cerbo_model", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+cerbo-core = "^4.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "artifactory"
+url = "https://artifactory.secureserver.net/artifactory/api/pypi/python-virt/simple"
+priority = "primary"

@@ -1,1 +1,0 @@
-# industry-classification-for-jetpack

@@ -1,0 +1,11 @@
+# poetry
+export PATH="/Users/fwang/.local/bin:$PATH"
+
+# aws login
+export AWS_PROFILE=gdmlml-deploy
+aws sts get-caller-identity
+
+# docker ecr login
+aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 760493221347.dkr.ecr.us-west-2.amazonaws.com
+aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 111039177464.dkr.ecr.us-west-2.amazonaws.com
+aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 764525110978.dkr.ecr.us-west-2.amazonaws.com
